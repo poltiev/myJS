@@ -4,7 +4,7 @@ $(function(burger) {
     $('.all').click(function( event ){
         // проверяем находится ли элемент на который кликнули в нашем меню,
         // то есть в контейнере "menu-container"
-        var eventInMenu = burger( event.target ).parents('.menu-container');
+        let eventInMenu = burger( event.target ).parents('.menu-container');
         // если родителя нет, значит клик был вне меню и меню сворачиваем
         if( !eventInMenu.length ){
             burger('.main-menu').slideUp('800');
