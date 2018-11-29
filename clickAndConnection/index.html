@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обработка клика</title>
+    <style>
+        .active {
+            color: red;
+        }
+
+        .myObg {
+            display: none;
+        }
+
+        .border {
+            border: 1px solid red;
+        }
+
+        .monospace {
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<div class="cont1">
+    Произвольный класс))))
+</div>
+<div>Просто текст</div>
+<div class="cont">
+    <button class="button" type="button">Первый</button>
+    <div class="myObg">
+        Текст который появляется и скрывается
+    </div>
+</div>
+<br><br><br>
+<div>Тут обращаемся к родителю</div>
+<div class="cont2">
+    <button class="button2" type="button">Второй</button>
+</div>
+<br><br><br>
+<div>Для дочернего</div>
+<div class="cont3">
+    <ul class="myUl">
+        <li class="click3">Кликаем сюда))
+            <ul>
+                <li>Текст1</li>
+                <li>Текст2</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<br><br><br><br><br>
+<h1>Подключение jquery</h1>
+
+<h2>Способ 1. Скачать в папку и подключить файл</h2>
+<p>Наиболее распространённый способ, если сайт могут просматривать локально, без подключения сети Интернет (неужели
+    такие
+    еще есть?).
+</p>
+<p>
+    Идем по адресу и жмем большую желто-оранжевую кнопку Download jQuery. Переходим на страницу где выбираем версию
+    jQuery.
+    Желательно выбирать последнюю из доступных (на момент написания статьи – это 2.2.3). Обозначение compressed –
+    означает,
+    что библиотека минимизирована, т.е. занимаем минимум места, но, к сожалению, читать исходных код трудно. Качаем!
+    После
+    сохранения подключаем файл библиотеки. Для моей структуры (все скрипты лежат в папке js), код выглядит следующим
+    образом:
+    <br><b class="monospace"> &lt;script src="js/jquery-2.2.3.min.js"&gt;&lt;/script&gt;</b>
+</p>
+<h2>Способ 2. Подключаем напрямую с CDN</h2>
+<p>
+    Данный способ хорош тем, что библиотека подключается с сайта и не валяется на жестком диске. Особенно это актуально
+    при большом количестве маленьких проектов и для обучения.
+</p>
+<p>
+    Для подключения рекомендую использоваться подключение от Google Developers, обычно я нахожу данную страницу по
+    ссылке jquery google. Наша задача скопировать строку:
+</p>
+<p><b class="monospace">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"&gt;&lt;/script&gt;</b>
+</p>
+<h3>Версии для подключения разнвх скриптов <a href="https://developers.google.com/speed/libraries/#jquery" target="_blank">google</a>
+</h3>
+<br><br><br><br><br><br><br><br><br><br>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/click.js"></script>
+</body>
+</html>
