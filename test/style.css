@@ -1,0 +1,12 @@
+.burger {
+    display: flex;
+}
+
+@media (min-width: 740px)  {
+    .burger {
+        display: none;
+    }
+    .content {
+        border: 1px solid green;
+    }
+}
