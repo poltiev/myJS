@@ -19,3 +19,16 @@ $('.button2').on('click', function () {
 $('.click3').on('click', function () {
     $(this).children().toggleClass('active');
 });
+
+//для а ul
+
+$('.menu > li > a').on('click', function(){
+    $('.activelink').slideUp(300);
+    $('.activelink').removeClass('activelink');
+    //Используем для следующего объекта переключатель свернуть/развернуть
+    $(this).next().slideToggle(500);
+    //Используем для следующего объекта переключатель класаа
+    $(this).next().toggleClass('activelink');
+    //Для текущего объекта то-же переключатель класса
+    $(this).toggleClass('active');
+});
