@@ -3,7 +3,7 @@ let isScrolling = false;
 window.addEventListener("scroll", throttleScroll, false);
 
 function throttleScroll(e) {
-    if (isScrolling == false) {
+    if (isScrolling === false) {
         window.requestAnimationFrame(function() {
             scrolling(e);
             isScrolling = false;
@@ -18,7 +18,7 @@ let listItems = document.querySelectorAll("#mainContent ol li");
 let firstBox = document.querySelector("#firstBox");
 let secondBox = document.querySelector("#secondBox");
 
-function scrolling(e) {
+function scrolling() {
 
     if (isPartiallyVisible(firstBox)) {
         firstBox.classList.add("active");
