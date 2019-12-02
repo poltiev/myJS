@@ -1,12 +1,48 @@
-.burger {
-    display: flex;
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
 }
 
-@media (min-width: 740px)  {
-    .burger {
-        display: none;
-    }
-    .content {
-        border: 1px solid green;
-    }
+
+p {
+    color: #9BC53D;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: #1581AF;
+}
+h1 {
+    color: #333333;
+}
+.podpis {
+    color: red;
+    font-size: 10px;
+    text-align: right;
+    font-weight: bold;
+    font-style: normal;
+}
+h1.podpis {
+    text-align: center;
+}
+
+#my {
+    color: #7591ff;
+}
+.color-green {
+    color: #FDE74C;
+}
+
+b i {
+    color: black;
+}
+i b {
+    color: #7591ff;
+}
+
+h1 b i {
+    color: brown;
+}
+.podpis b i {
+    color: aqua;
 }
