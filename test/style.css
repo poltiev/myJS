@@ -1,48 +1,88 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700,700i&display=swap&subset=cyrillic');
 
 body {
-    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 10px;
+    outline: 1px solid red;
+}
+.news-cont {
+    outline: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.news {
+    margin-bottom: 40px;
+}
+.news-img {
+
+}
+.news-img img {
+    width: 100%;
+}
+.news-text {
+    padding-top: 20px;
+}
+.news-text h2 {
+    margin: 0 0 10px 0;
+}
+.news-text p {
+    margin: 0;
 }
 
-
-p {
-    color: #9BC53D;
-}
-h1, h2, h3 {
-    text-align: center;
-    color: #1581AF;
-}
-h1 {
-    color: #333333;
-}
-.podpis {
-    color: red;
-    font-size: 10px;
-    text-align: right;
-    font-weight: bold;
-    font-style: normal;
-}
-h1.podpis {
-    text-align: center;
+@media screen and (min-width: 640px) {
+    .news-cont {
+        flex-direction: row;
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+  .news {
+      width: 50%;
+      padding: 0 10px;
+  }
 }
 
-#my {
-    color: #7591ff;
-}
-.color-green {
-    color: #FDE74C;
-}
+@media screen and (min-width: 768px){
+    .news {
+        width: 100%;
+        display: flex;
 
-b i {
-    color: black;
+    }
+    .news-img, .news-text {
+        width: 50%;
+    }
+    .news-img {
+        padding-right: 10px;
+    }
+    .news-text {
+        padding-top: 0;
+        padding-left: 10px;
+    }
+    .news-text p {
+       font-size: 0.9em;
+    }
+/*    Конец 768*/
 }
-i b {
-    color: #7591ff;
-}
-
-h1 b i {
-    color: brown;
-}
-.podpis b i {
-    color: aqua;
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    .news {
+        display: block;
+        width: 33.33%;
+    }
+    .news-img, .news-text {
+        width: auto;
+        padding: 0;
+    }
+    /*    Конец 1300*/
 }
